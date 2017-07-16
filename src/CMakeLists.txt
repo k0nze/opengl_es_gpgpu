@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.8)
+project(opengl_es_gpgpu)
+set(CMAKE_BINARY_DIR ${CMAKE_BINARY_DIR})
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+include_directories("${PROJECT_SOURCE_DIR}")
+add_executable(opengl_es_gpgpu ${PROJECT_SOURCE_DIR}/main.c)
+target_link_libraries(opengl_es_gpgpu GL EGL GLEW)
