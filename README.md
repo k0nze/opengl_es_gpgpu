@@ -11,7 +11,7 @@ Adapted from:
 ```
 mkdir build 
 cd build
-cmake ../build
+cmake ../src
 ``` 
 
 ## Run
